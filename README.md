@@ -17,13 +17,14 @@ This code snippet executes the following tasks:
 
 ```json
 {
-    "Name": "TestGroup",  // Required to lookup the ADgroup to Update, This property will not be updated.
-    "DisplayName": "TestGroupNew",
-    "Description": "TestGroupNew"
+    "GroupIdentity": "TestGroup",  // Required to lookup the ADgroup to Update, This property will not be updated.
+    "GroupDisplayName": "TestGroupNew",
+    "GroupDescription": "TestGroupNew"
 }
 ```
 
 > :exclamation: It is important to note that the names of your form fields might differ. Ensure that the `$formObject` hashtable is appropriately adjusted to match your form fields.
+> The field **GroupIdentity** accepts different values [See the Microsoft Docs page](https://learn.microsoft.com/en-us/powershell/module/activedirectory/set-adgroup?view=windowsserver2022-ps)
 
 2. Imports the ActiveDirectory module.
 
